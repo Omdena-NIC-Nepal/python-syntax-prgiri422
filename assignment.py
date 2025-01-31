@@ -7,8 +7,8 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-    return f"My name is {name} and I am {age} years old"
-    pass
+    return (f"My name is {name} and I am {age} years old")
+    
 
 def conditional_check(number):
     """
@@ -19,12 +19,12 @@ def conditional_check(number):
         str: "Greater", "Lesser", or "Equal"
     """
     if number > 10 :
-        return "Greater"
+        return ("Greater")
     elif number < 10 :
         return "Lesser"
     else :
         return "Equal"
-    pass
+  
 
 def loop_sum(n):
     """
@@ -38,7 +38,7 @@ def loop_sum(n):
     for i in range(1,n+1) :
         loop_sum += i
     return loop_sum
-    pass
+ 
 
 def list_operations(numbers):
     """
@@ -52,7 +52,7 @@ def list_operations(numbers):
     Max_value = max(numbers)
     Min_value = min(numbers)
     return Total_sum,Max_value,Min_value
-    pass
+
 
 def dict_operations(students_dict):
     """
@@ -64,7 +64,7 @@ def dict_operations(students_dict):
     """
     return [name for name, scores in students_dict.items() if scores > 80 ]
     
-    pass
+   
 
 def set_operations(list1, list2):
     """
@@ -76,7 +76,7 @@ def set_operations(list1, list2):
         set: Common elements
     """
     return set(list1) & set(list2)
-    pass  
+   
 
 def arithmetic_ops(a, b):
     """
@@ -93,7 +93,7 @@ def arithmetic_ops(a, b):
         "product": a*b,
         "quotient": a/b if b!=0 else "can't divide by 0"
     }
-    pass
+   
 
 def logical_ops(x, y):
     """
@@ -109,7 +109,7 @@ def logical_ops(x, y):
         "or" : x or y ,
         "not_x" : not x
         }
-    pass
+   
 
 def bitwise_ops(a, b):
     """
@@ -125,4 +125,4 @@ def bitwise_ops(a, b):
         "or" : a | b,
         "xor" : a ^ b
     }
-    pass
+   
