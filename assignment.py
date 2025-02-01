@@ -87,11 +87,16 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
+    try :
+        quotient = a/b
+    except ZeroDivisionError:
+        quotient = "can't divide by 0"
+
     return{
         "sum": a+b,
         "difference": a-b,
         "product": a*b,
-        "quotient": a/b if b!=0 else "can't divide by 0"
+        "quotient": quotient
     }
    
 
